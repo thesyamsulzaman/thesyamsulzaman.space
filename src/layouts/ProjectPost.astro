@@ -1,0 +1,26 @@
+---
+import Layout from "./Default.astro";
+import ProjectSidebar from "@components/projects/ProjectSideBar.astro";
+import ProjectContent from "@components/projects/ProjectContent.astro";
+
+const ogImage = new URL(`/v1/generate/og/${Astro.params.slug}.png`, Astro.url);
+
+interface Props {
+  author: string;
+  pubDate: Date;
+  headings: unknown;
+  description: string;
+  title: string;
+}
+
+const { author, pubDate, headings, description, title } = Astro.props;
+---
+
+<Layout title={title} description={description} ogImage={ogImage}>
+  <main class="p-6 lg:grid lg:grid-cols-3 flex justify-center gap-4">
+    <ProjectSidebar headings={headings as any[]} />
+    <ProjectContent {pubDate} {author}>
+      <slot />
+    </ProjectContent>
+  </main>
+</Layout>

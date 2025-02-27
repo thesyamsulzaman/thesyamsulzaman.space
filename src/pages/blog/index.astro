@@ -1,0 +1,34 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Default.astro";
+import BlogList from "@components/blog/BlogList.astro";
+
+async function fetchRSSFeed() {
+  const response = await fetch(
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@thesyamsulzaman"
+  );
+  const data = await response.json();
+  return data.items.map((item: any) => ({
+    title: item.title,
+    description: item.description,
+    url: item.link,
+    date: new Date(item.pubDate).toLocaleDateString(),
+  }));
+}
+
+const posts = await fetchRSSFeed();
+// const posts = [];
+---
+
+<Layout
+  title="Blog"
+  description="Brutal Blog | On this page you can find a collection of blogposts"
+  pageTitle="Brutal Blog"
+>
+  <main class="bg-green p-6 h-[80vh]">
+    <div class="max-w-[890px] mx-auto">
+      <h2 class="text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif">Blog</h2>
+      <BlogList posts={posts} />
+    </div>
+  </main>
+</Layout>

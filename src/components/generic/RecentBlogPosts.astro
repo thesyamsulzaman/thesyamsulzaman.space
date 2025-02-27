@@ -1,0 +1,42 @@
+---
+import BlogList from "@components/blog/BlogList.astro";
+import { Card } from "@eliancodes/brutal-ui";
+import { Button } from "@eliancodes/brutal-ui";
+
+interface Props {
+  count?: number;
+}
+
+async function fetchRSSFeed() {
+  const response = await fetch(
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@thesyamsulzaman"
+  );
+  const data = await response.json();
+  return data.items.map((item: any) => ({
+    title: item.title,
+    description: item.description,
+    url: item.link,
+    date: new Date(item.pubDate).toLocaleDateString(),
+  }));
+}
+
+const posts = await fetchRSSFeed();
+---
+
+<section>
+  <Card>
+    <div class="flex justify-between items-start">
+      <h2 class="text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif">
+        Recent Blogposts
+      </h2>
+      <div class="hidden md:block">
+        <Button href="/blog/">Go to blog &rarr;</Button>
+      </div>
+      <div class="block md:hidden">
+        <Button href="/blog/">to blog</Button>
+      </div>
+    </div>
+
+    <BlogList posts={posts} />
+  </Card>
+</section>

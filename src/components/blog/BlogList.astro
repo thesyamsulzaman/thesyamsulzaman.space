@@ -1,0 +1,20 @@
+---
+const { posts } = Astro.props;
+---
+
+<ul class="grid gap-2.5">
+  {
+    posts.map((post: any) => (
+      <div class="mb-5">
+        <a
+          href={post.url}
+          target="_blank"
+          class="poppins text-lg md:text-xl mb-2 hover:underline"
+        >
+          {post.title}
+        </a>
+        <p class="text-gray-800 text-sm mt-2">{post.date}</p>
+      </div>
+    ))
+  }
+</ul>
