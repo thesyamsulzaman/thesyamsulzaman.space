@@ -1,7 +1,7 @@
 ---
 title: Internship Abroad
-description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
-pubDate: 2023-02-14 23:49
+description: Platform that connects students with global internship opportunities. It offers support for visa and housing arrangements, helping students transition smoothly to their international work experience.
+pubDate: 2025-02-14 23:49
 author: Syamsul Zaman
 tags:
   - Next.js
