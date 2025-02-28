@@ -12,6 +12,7 @@ tags:
   - Docker
 imgUrl: "./assets/menu.png"
 description: a web-based AI-powered RPG game that gamifies Cognitive Behavioral Therapy (CBT).
+siteUrl: "https://moodify-pwa.vercel.app/"
 ---
 
 ## Short Explaination
