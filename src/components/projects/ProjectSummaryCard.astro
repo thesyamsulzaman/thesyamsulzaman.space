@@ -76,7 +76,7 @@ const { post } = Astro.props;
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://hexcape.thcl.dev"
+          href={post.data.siteUrl}
           class="poppins underline text-sm text-black transition-colors hover:decoration-current focus:decoration-current default-ring flex items-center gap-1.5 c1 group decoration-transparent cursor-newtab"
         >
           <div class:list={["i-uil-paperclip", "w-4 h-4"]}></div>
