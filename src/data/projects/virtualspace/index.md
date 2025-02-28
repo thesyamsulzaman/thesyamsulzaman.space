@@ -1,6 +1,6 @@
 ---
-title: Internship Abroad
-description: Platform that connects students with global internship opportunities. It offers support for visa and housing arrangements, helping students transition smoothly to their international work experience.
+title: Virtualspace
+description: VirtualSpace is an all-in-one platform designed for remote teams to enhance collaboration and communication. It offers tools for project management, task delegation, real-time chat, and integration with other apps to streamline workflows and improve productivity.
 pubDate: 2025-02-14 23:49
 author: Syamsul Zaman
 tags:
@@ -8,8 +8,11 @@ tags:
   - Typescript
   - React Query
   - TailwindCSS
+  - Gulp
+  - SASS
+
 imgUrl: "./assets/hero.png"
-siteUrl: "https://internshipabroad.co"
+siteUrl: "https://virtualspace.ai/"
 ---
 
 ## Deorum petiit ignis

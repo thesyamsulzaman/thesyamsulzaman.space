@@ -1,15 +1,17 @@
 ---
-title: Internship Abroad
-description: Platform that connects students with global internship opportunities. It offers support for visa and housing arrangements, helping students transition smoothly to their international work experience.
+title: GIDIG.IN
+description: A Full-stack camping kit store/e-commerce web application. leveraging HTML, Atomic CSS/SASS, JavaScript, and PHP Native, adhering to the Model-View-Controller (MVC) architectural pattern. The MVC architecture is orchestrated to promote code organization, database migration, separation of concerns, and facilitates efficient development and future enhancements.
 pubDate: 2025-02-14 23:49
 author: Syamsul Zaman
 tags:
-  - Next.js
-  - Typescript
-  - React Query
-  - TailwindCSS
-imgUrl: "./assets/hero.png"
-siteUrl: "https://internshipabroad.co"
+  - PHP
+  - MySQL
+  - MVC Architecture
+  - SASS
+  - LAMP
+
+imgUrl: "./assets/home.png"
+siteUrl: "https://github.com/thesyamsulzaman/gidig.in"
 ---
 
 ## Deorum petiit ignis

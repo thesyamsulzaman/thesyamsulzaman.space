@@ -13,6 +13,7 @@ const projectsCollection = defineCollection({
       pubDate: z.string().transform((str) => new Date(str)),
       imgUrl: image(),
       draft: z.boolean().optional().default(false),
+      siteUrl: z.string(),
     }),
 });
 
