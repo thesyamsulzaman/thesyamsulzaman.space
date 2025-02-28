@@ -9,6 +9,7 @@ tags:
   - React Query
   - TailwindCSS
 imgUrl: "./assets/hero.png"
+siteUrl: "internshipabroad.co"
 ---
 
 ## Deorum petiit ignis
