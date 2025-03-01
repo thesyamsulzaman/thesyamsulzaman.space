@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
-Host: https://brutal.elian.codes/
-Sitemap: https://brutal.elian.codes/sitemap-index.xml
+Host: https://thesyamsulzaman.space/
+Sitemap: https://thesyamsulzaman.space/sitemap-index.xml
